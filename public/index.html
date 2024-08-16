@@ -14,10 +14,10 @@
         <div class="divider mt-5 mb-6">
             <span class="relative flex justify-center">
                 <div
-                  class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+                  class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-75"
                 ></div>
               
-                <span class="relative z-10 bg-white px-6">How Old are You Today</span>
+                <span class="relative z-10 bg-blue-200 px-6 font-serif font-bold">How Old are You Today?</span>
               </span>
         </div>
         <div class="calculator_body mt-5 mb-5">
@@ -30,17 +30,17 @@
               
               <label
                 for="Date of Birth"
-                class="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5"
+                class="relative block rounded-md border border-blue-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5"
               >
                 <input
-                  type="text"
+                  type="date"
                   id="Date of Birth"
                   class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                   placeholder="Date of Birth"
                 />
               
                 <span
-                  class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
+                  class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 font-semibold bg-blue-200 p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                 >
                   Date of Birth
                 </span>
@@ -54,45 +54,46 @@
               
               <label
                 for="Current Date"
-                class="relative block rounded-md border border-gray-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5"
+                class="relative block rounded-md border border-blue-200 shadow-sm focus-within:border-blue-600 focus-within:ring-1 focus-within:ring-blue-600 mb-5"
               >
                 <input
-                  type="text"
+                  type="date"
                   id="Current Date"
                   class="peer border-none bg-transparent placeholder-transparent focus:border-transparent focus:outline-none focus:ring-0"
                   placeholder="Current Date"
                 />
               
                 <span
-                  class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
+                  class="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 font-semibold bg-blue-200 p-0.5 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs"
                 >
                   Current Date
                 </span>
               </label></div>
             <div class="calculate_btn flex justify-center"><!-- Base -->
 
-                <a
-                  class="inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 mb-5 "
-                  href="#"
+                <button
+                  class="inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500 mb-5"
+                  onclick="calculateAge()" 
                 >
                   Calculate
-                </a>
+            </button>
               </div>
-            <div class="age_output"></div>
+            <div class="age_output flex justify-center font-bold"></div>
         </div>
         <div class="divider">
             <span class="relative flex justify-center">
                 <div
-                  class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
+                  class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-blue-500 to-transparent opacity-75"
                 ></div>
               
-                <span class="relative z-10 bg-white px-6">By DNNGETICH</span>
+                <span class="relative z-10 bg-blue-200 font-semibold px-6">By DNNGETICH</span>
               </span>
         </div>
         <div class="footer">
 
         </div>
     </div>
+    <script src="./index.js"> </script>
     
 </body>
 </html>
